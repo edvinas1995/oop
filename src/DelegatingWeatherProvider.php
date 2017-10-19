@@ -22,9 +22,10 @@ class DelegatingWeatherProvider implements WeatherProviderInterface
             try {
                 return $provider->fetch($location);
             } catch (WeatherProviderException $e){
-
+                    var_dump($e->getMessage());
             }
         }
+
         throw new WeatherProviderException('None of given providers');
     }
 

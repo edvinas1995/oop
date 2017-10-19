@@ -22,15 +22,17 @@ class DarkSkyWeatherProvider implements WeatherProviderInterface
 
     public function fetch(Location $location): Weather
     {
-        $temperature = null;
         try {
             $darksky = new Darksky($this->key, $location->getLon(), $location->getLat());
             $result = $darksky->forecast();
             $result = json_decode($result, true);
             $temperature = $result['currently']['temperature'];
-        } catch(\Exception $e) {
+            return new Weather($temperature);
+
+        } catch(WeatherProviderException $e) {
             var_dump($e->getMessage());
         }
-        return new Weather($temperature);
+
+        throw new WeatherProviderException('Unfortunately, the application cannot process your request at this time.');
     }
 }

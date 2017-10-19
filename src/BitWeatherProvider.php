@@ -11,6 +11,7 @@ namespace Nfq\Weather;
 
 use Cmfcmf\OpenWeatherMap;
 use Cmfcmf\OpenWeatherMap\Exception as OWMException;
+use Nfq\Weather\WeatherProviderException;
 
 class BitWeatherProvider implements WeatherProviderInterface
 {
@@ -36,9 +37,14 @@ class BitWeatherProvider implements WeatherProviderInterface
 
             $json_output= curl_exec($ch);
             $weather = json_decode($json_output);
-        } catch(\Exception $e) {
+
+            return new Weather($weather->data[0]->temp);
+
+        } catch(WeatherProviderException $e) {
              var_dump($e->getMessage());
         }
-        return new Weather($weather->data[0]->temp);
+
+        throw new WeatherProviderException('Unfortunately, the application cannot process your request at this time.');
+
     }
 }
