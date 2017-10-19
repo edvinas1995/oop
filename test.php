@@ -28,7 +28,7 @@ $bitCacheProvider = new CachedWeatherProvider($bitProvider, $cacheAdapter);
 $darkSkyCacheProvider = new CachedWeatherProvider($darkSkyProvider, $cacheAdapter);
 $delegatingCacheProvider = new CachedWeatherProvider($delegatingProvider, $cacheAdapter);
 
-run($darkSkyCacheProvider);
+run($delegatingCacheProvider);
 
 function run(WeatherProviderInterface $provider){
     $vilnius = new Location( 54.697077,25.270532);

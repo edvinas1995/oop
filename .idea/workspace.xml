@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d597d93a-52e5-4d0f-b66d-1a1e6fd885be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BitWeatherProvider.php" afterPath="$PROJECT_DIR$/src/BitWeatherProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DarkSkyWeatherProvider.php" afterPath="$PROJECT_DIR$/src/DarkSkyWeatherProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" afterPath="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="e#146#171#0#PHP" expanded="true" />
               </folding>
@@ -53,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelegatingWeatherProvider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DelegatingWeatherProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DelegatingWeatherProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -125,11 +122,11 @@
         <option value="$PROJECT_DIR$/src/asd.php" />
         <option value="$PROJECT_DIR$/src/Location.php" />
         <option value="$PROJECT_DIR$/src/CachedWeatherProvider.php" />
-        <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/src/WeatherProviderException.php" />
         <option value="$PROJECT_DIR$/src/DelegatingWeatherProvider.php" />
         <option value="$PROJECT_DIR$/src/BitWeatherProvider.php" />
         <option value="$PROJECT_DIR$/src/DarkSkyWeatherProvider.php" />
+        <option value="$PROJECT_DIR$/test.php" />
       </list>
     </option>
   </component>
@@ -240,12 +237,12 @@
       <workItem from="1508345558440" duration="9981000" />
       <workItem from="1508420463299" duration="226000" />
       <workItem from="1508424036118" duration="85000" />
-      <workItem from="1508427813225" duration="16475000" />
+      <workItem from="1508427813225" duration="16674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49460000" />
+    <option name="totallyTimeSpent" value="49659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -544,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="e#146#171#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/config/Tests/Exception/FileLoaderLoadExceptionTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -614,6 +601,16 @@
         <state relative-caret-position="330">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <element signature="e#146#171#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
