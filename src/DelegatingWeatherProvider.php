@@ -25,8 +25,7 @@ class DelegatingWeatherProvider implements WeatherProviderInterface
 
             }
         }
-
-            throw new WeatherProviderException('None of given providers');
+        throw new WeatherProviderException('None of given providers');
     }
 
 }

@@ -37,7 +37,7 @@ class BitWeatherProvider implements WeatherProviderInterface
             $json_output= curl_exec($ch);
             $weather = json_decode($json_output);
         } catch(\Exception $e) {
-            echo 'General exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
+             var_dump($e->getMessage());
         }
         return new Weather($weather->data[0]->temp);
     }

@@ -22,20 +22,17 @@ $darkSkyProvider = new DarkSkyWeatherProvider('6796cffa473bc53793dfd45df496833c'
 $delegatingProvider = new DelegatingWeatherProvider([$darkSkyProvider, $bitProvider]);
 
 
-run($delegatingProvider);
+$cacheAdapter = new FilesystemAdapter();
+
+$bitCacheProvider = new CachedWeatherProvider($bitProvider, $cacheAdapter);
+$darkSkyCacheProvider = new CachedWeatherProvider($darkSkyProvider, $cacheAdapter);
+$delegatingCacheProvider = new CachedWeatherProvider($delegatingProvider, $cacheAdapter);
+
+run($delegatingCacheProvider);
 
 function run(WeatherProviderInterface $provider){
     $vilnius = new Location( 54.697077,25.270532);
     $barcelona = new Location(41.390896, 2.162143);
 
-    $weather = $provider->fetch($vilnius);
-
-//    $cache = new FilesystemAdapter();
-//    $cacheProvider = new CachedWeatherProvider($provider, $cache);
-
-    var_dump($weather);
+    var_dump($provider->fetch($barcelona));
 }
-
-
-
-

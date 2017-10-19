@@ -26,4 +26,7 @@ class Location
     public function getLat() : float {
         return $this->lat;
     }
+
+
+
 }
